@@ -1,0 +1,264 @@
+.dashboard {
+  width: 100%;
+  padding: 20px;
+  margin-left: auto;
+  margin-top: auto;
+  background-color: black; 
+}
+
+.heading {
+  font-size: 24px;
+  color: #FFFFFF; 
+  margin-bottom: 20px;
+}
+
+.stats-section {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.stats {
+  flex: 1 1 calc(60% - 10px);
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.stats-profit {
+  flex: 1 1 calc(40% - 10px);
+  background-color: #1E1F29; 
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.stats-profit h3 {
+  font-size: 16px;
+  color: #A3A6C5; 
+  margin-bottom: 5px;
+  font-weight: 700;
+  position: relative;
+  bottom: 16px;
+}
+
+.profit-number {
+  font-size: 30px;
+  color: #FFFFFF !important;
+  font-weight: 700;
+}
+
+.stats-description p {
+  margin: 5px 0;
+  color: #39FF14; 
+}
+
+.stats-progress-bar p {
+  margin: 2px 0;
+  color: #FFFFFF;
+  font-size: 8px;
+  position: relative;
+  bottom: 10px;
+}
+
+.goal-status {
+  position: relative;
+  bottom: 45px !important;
+  color: #FFD700; 
+}
+
+.chart-section {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.activity {
+  width: calc(60% - 10px);
+  background-color: #1E1F29; 
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.activity .head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+.activity .head .heading {
+  font-size: 18px;
+  color: #FFFFFF; 
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+.activity .head .dropdown {
+  display: flex;
+  align-items: center;
+  border: 1px solid white;
+}
+
+.activity .head .dropdown select {
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  padding: 6px 4px;
+  font-size: 12px;
+  font-weight: 700;
+  background-color: #3C3E59; 
+  color: #FFFFFF;
+}
+
+.activity .chart-container {
+  flex: 1;
+}
+
+.orders-container {
+  width: calc(40% - 10px);
+  background-color: #1E1F29; 
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.stats-description {
+  margin: 4px 0px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.stats-progress-bar {
+  width: 40%;
+  margin: 4px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.head {
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.dropdown select {
+  outline: none;
+  border: none;
+  border-radius: 20px;
+}
+
+.dropdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 6px;
+  border: 1px solid #3C3E59;
+  border-radius: 20px;
+  background-color: #3C3E59;
+  color: #FFFFFF;
+}
+
+.bottom-container {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1200px) {
+  .stats, .activity {
+    flex: 1 1 calc(100% - 20px);
+  }
+  
+  .stats-profit, .orders-container {
+    flex: 1 1 calc(100% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard {
+    padding: 10px;
+  }
+  
+  .heading {
+    font-size: 20px;
+  }
+  
+  .stats-section, .chart-section {
+    flex-direction: column;
+  }
+  
+  .stats, .activity, .stats-profit, .orders-container {
+    flex: 1 1 100%;
+    margin-bottom: 10px;
+  }
+  
+  .stats-profit, .orders-container, .activity {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .heading {
+    font-size: 18px;
+  }
+
+  .stats-profit, .orders-container, .activity {
+    padding: 5px;
+  }
+
+  .stats-profit h3, .goal-status {
+    font-size: 16px;
+  }
+
+  .profit-number {
+    font-size: 24px;
+  }
+
+  .stats-description p, .stats-progress-bar p {
+    font-size: 8px;
+  }
+  .stats-description h3{
+    font-size: 12px;
+  }
+  .stats-description{
+    margin: 20px 0px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .activity{
+    width: 100%;
+  }
+  .orders-container{
+    width: 100%;
+  }
+
+}
+
+
+@media (min-width: 390px) and (max-width:430px) {
+  .profit-number, .profit-trend {
+    font-size: 24px !important;
+  }
+
+}
+

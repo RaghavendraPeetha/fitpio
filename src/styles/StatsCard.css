@@ -1,0 +1,135 @@
+.stats-card {
+  background-color: #1E1F29;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex: 1;
+  min-width: 120px; 
+}
+
+.stats-icon {
+  color: #007bff;
+  margin-right: 20px;
+  position: relative;
+  left: 15px;
+  font-size: 10px; 
+}
+
+.logo-orders {
+  color: blue; 
+}
+
+.logo-delivered {
+  color: rgb(99, 225, 99);
+}
+
+.logo-cancelled {
+  color: rgb(194, 90, 90); 
+}
+
+.sign-orders {
+  color: rgb(136, 136, 206); 
+}
+
+.sign-delivered {
+  color: rgb(119, 189, 119); 
+}
+
+.sign-cancelled {
+  color: rgb(236, 98, 98); 
+}
+
+
+.stats-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.stats-title {
+  font-size: 14px; 
+  color: white;
+  margin-bottom: 5px;
+  font-weight: 600; 
+
+}
+
+.stats-value {
+  font-size: 28px; 
+  color: white;
+  font-weight: 700; 
+}
+
+.stats-rate {
+  font-size: 14px;
+}
+
+.stats-rate.increased {
+  color: #28a745;
+}
+
+.stats-rate.decreased {
+  color: #dc3545;
+}
+
+.stats-sign {
+  width: 0%;
+  position: relative;
+  right: 13px;
+  top: 6px; 
+  font-size: 18px; 
+}
+
+.icon-cnr{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 6px;
+  right: 12px;
+}
+
+.revenue{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 2px;
+  right: 5px;
+}
+
+.stat-sign-container {
+  align-items: flex-start;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  display: flex;
+  padding: 14px 0; 
+  border-radius: 6px;
+}
+
+
+.ordered{
+  background-color: #385f89;
+}
+
+.delivered{
+  background-color: rgb(102, 135, 102);
+}
+
+.cancelled{
+  background-color: rgb(155, 128, 128);
+}
+
+.profit{
+  background-color: rgb(157, 150, 151);
+}
+
+.top-section{
+  display: flex;
+  flex-direction: column;
+}
